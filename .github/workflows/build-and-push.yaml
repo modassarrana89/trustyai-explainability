@@ -55,7 +55,7 @@ jobs:
           echo "GITHUB.REF: ${{ github.ref }}"
           echo "GITHUB.HEAD_REF: ${{ github.head_ref }}"
           echo "SHA: ${{ github.event.pull_request.head.sha }}"
-          echo "MAIN IMAGE AT: ${{ vars.QUAY_RELEASE_REPO || quay.io/morana }}:latest"
+          echo "MAIN IMAGE AT: ${{ vars.QUAY_RELEASE_REPO }}:latest"
           echo "CI IMAGE AT: quay.io/morana/trustyai-service-ci:${{ github.event.pull_request.head.sha }}"
 
       # Set environments depending on context
